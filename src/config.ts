@@ -31,4 +31,4 @@ export const ACCENTS = ["#3b5bdb", "#7c3aed", "#0891b2", "#059669", "#d97706", "
 
 // 使うGeminiモデル。名前は変わりやすいので、Firebaseコンソール(AI Logic)や
 // https://firebase.google.com/docs/ai-logic/models で最新のFlash系の名前を確認してください。
-export const MODEL_NAME: string = import.meta.env.VITE_GEMINI_MODEL ?? "gemini-3.8-flash";
+export const MODEL_NAME: string = import.meta.env.VITE_GEMINI_MODEL ?? "gemini-3.5-flash-lite";
