@@ -38,7 +38,7 @@ function friendlyError(e: unknown): string {
   const msg = e instanceof Error ? e.message : String(e);
   const m = msg.toLowerCase();
   if (m.includes("429") || m.includes("quota") || m.includes("resource_exhausted") || m.includes("rate"))
-    return "無料枠の上限に達しました。しばらく待ってからお試しください。";
+   return `無料枠の上限、または利用制限の可能性があります。(${msg.slice(0, 200)})`;
   if (m.includes("app check") || m.includes("appcheck") || m.includes("403") || m.includes("permission"))
     return "AIを利用できません。FirebaseコンソールでFirebase AI Logicの有効化とApp Checkの設定を確認してください。";
   if (m.includes("network") || m.includes("fetch")) return "ネットワークに接続できません。";
