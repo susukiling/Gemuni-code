@@ -6,7 +6,7 @@ import { getFirestore } from "firebase/firestore";
 
 // Firebaseコンソール → プロジェクトの設定 → マイアプリ の値。公開されても問題ない設定値です。
 const firebaseConfig = {
-  apiKey: "AlzaSyDC58g|66LbsB9pw7drnX3qYZFYTKiS_ZY",
+    apiKey: "AIzaSyDc58gl66LbsB9pw7drnX3qYzFYTKjs_zY",
   authDomain: "gemini-code-b841c.firebaseapp.com",
   projectId: "gemini-code-b841c",
   storageBucket: "gemini-code-b841c.firebasestorage.app",
